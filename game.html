@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tic Tac Toe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="resources/img/cross.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <script src="resources/js/game.js"></script>
+</head>
+
+<body data-title="game-page">
+    <div class="container-fluid bg-overlay">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-4 offset-md-4 d-flex justify-content-center">
+                    <h1 id="header">TIC TAC TOE</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 offset-md-4 d-flex justify-content-center">
+                    <div class="round-status">
+                        <p id="round-label">Round 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 offset-md-4 d-flex flex-row justify-content-center">
+                    <div class="score-imgs">
+                        <img id="bot-score-img" src="resources/img/robot.png"></img>
+                        <img id="tie-score-img" src="resources/img/tie.png"></img>
+                        <img id="human-score-img" src="resources/img/human.png"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 offset-md-4 d-flex flex-row justify-content-center">
+                    <div class="score-lbls">
+                        <label id="bot-score-lbl">0</label>
+                        <label id="tie-score-lbl">0</label>
+                        <label id="human-score-lbl">0</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 offset-md-4 d-flex justify-content-center">
+                    <table class="tic-tac-toe-board">
+                        <tbody>
+                            <tr>
+                                <td id="1"></td>
+                                <td id="2"></td>
+                                <td id="3"></td>
+                            </tr>
+                            <tr>
+                                <td id="4"></td>
+                                <td id="5"></td>
+                                <td id="6"></td>
+                            </tr>
+                            <tr>
+                                <td id="7"></td>
+                                <td id="8"></td>
+                                <td id="9"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 offset-md-4 d-flex justify-content-center">
+                    <div class="status">
+                        <p id="player-turn">Your turn!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
